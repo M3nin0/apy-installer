@@ -16,7 +16,7 @@ Programa que facilita a instalação de ferramentas úteis em sistemas Linux (De
 ## Uso
 
 Para fazer a utilização do programa é necessário ter:
-- Python >= 3.5
+- Python >= 3.4
 - PyQt5
 
 OBS: Suporte apenas para plataformas 64 bits
@@ -35,3 +35,5 @@ OBS: O comando python pode mudar de acordo com suas configurações
 
 ## Exemplo
 ![alt text](images/example.png "Exemplo 1")
+
+O aplicativo foi testado no Debian 8 e no Mint 18.2
