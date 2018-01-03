@@ -1,4 +1,6 @@
 # APY Installer :wrench:
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
 Programa que facilita a instalação de ferramentas úteis em sistemas Linux (Debian-like).
 
 ## Programas disponíveis
