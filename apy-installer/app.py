@@ -59,13 +59,14 @@ class Install(object):
                 command = "echo " + "\""+ self.password +"\"" + " | " + self.commands[checks.text()]
                 # Executa o comando criado acima
                 try:
-                    subprocess.Popen(command, shell=True)
+                    p = subprocess.Popen(command, shell=True)
+                    p.wait()
                 except BaseException as e:
                     erros += 1
-                    QMessageBox.information(window, 'Erro', 'Erro ao tentar instalar ' + checks.text() + '\n' + e)
+                    QMessageBox.information(self.window, 'Erro', 'Erro ao tentar instalar ' + checks.text() + '\n' + e)
                     continue
 
-        QMessageBox.information(window, 'Sucesso', 'Os programas selecionados foram instalados\nErros: ' + erros)
+        QMessageBox.information(self.window, 'Sucesso', 'Os programas selecionados foram instalados\nErros: ' + erros)
 
     def install_all():
         pass
