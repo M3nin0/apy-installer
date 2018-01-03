@@ -26,7 +26,7 @@ class Install(object):
 	            sudo dpkg -i opera && sudo apt-get install -f -y',
                 'Atom': 'sudo -S wget https://atom.io/download/deb -O atom && sudo dpkg -i atom',
 
-                'Vim': 'apt-get install vim -f -y ',
+                'Vim': 'sudo -S apt-get install vim -f -y ',
 
                 'Telegram': '',
 
@@ -34,7 +34,7 @@ class Install(object):
                 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list && \
                 sudo apt-get update && sudo apt-get install spotify-client',
 
-                'VLC': 'apt-get install vlc -f -y',
+                'VLC': 'sudo -S apt-get install vlc -f -y',
 
                 'VirtualBox': 'sudo -S wget http://download.virtualbox.org/virtualbox/5.2.4/virtualbox-5.2_5.2.4-119785~Debian~jessie_amd64.deb -O virtualbox \
                 sudo dpkg -i virtualbox'
