@@ -20,6 +20,8 @@ Para fazer a utilização do programa é necessário ter:
 - Python >= 3.5
 - PyQt5
 
+OBS: Suporte apenas para plataformas 64 bits
+
 ## Instalação do PyQt
 
 Utilize o seguinte comando para fazer a instalação

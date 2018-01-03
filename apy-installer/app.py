@@ -24,6 +24,7 @@ class Install(object):
                 'Opera': 'sudo -S apt-get install apt-transport-https && \
                 wget http://deb.opera.com/opera/pool/non-free/o/opera-stable/opera-stable_43.0.2442.806_amd64.deb -O "opera" && \
 	            sudo dpkg -i opera && sudo apt-get install -f -y',
+
                 'Atom': 'sudo -S wget https://atom.io/download/deb -O atom && sudo dpkg -i atom',
 
                 'Vim': 'sudo -S apt-get install vim -f -y ',
@@ -68,7 +69,7 @@ class Install(object):
 
         QMessageBox.information(self.window, 'Sucesso', 'Os programas selecionados foram instalados\nErros: ' + str(erros))
 
-    def install_all():
+    def install_all(self):
         '''
             Método para instalar todos os programas de uma única vez
         '''
@@ -80,7 +81,7 @@ class Install(object):
                 p.wait()
             except BaseException as e:
                 erros += 1
-                
+
         QMessageBox.information(self.window, 'Sucesso', 'Todos os programas foram instalados\nErros: ' + str(erros))
 
 class App(object):
