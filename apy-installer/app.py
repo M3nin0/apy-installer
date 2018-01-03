@@ -66,10 +66,22 @@ class Install(object):
                     QMessageBox.information(self.window, 'Erro', 'Erro ao tentar instalar ' + checks.text() + '\n' + e)
                     continue
 
-        QMessageBox.information(self.window, 'Sucesso', 'Os programas selecionados foram instalados\nErros: ' + erros)
+        QMessageBox.information(self.window, 'Sucesso', 'Os programas selecionados foram instalados\nErros: ' + str(erros))
 
     def install_all():
-        pass
+        '''
+            Método para instalar todos os programas de uma única vez
+        '''
+        erros = 0
+        for key in self.commands:
+            command = "echo " + "\""+ self.password +"\"" + " | " + self.commands[key]
+            try:
+                p = subprocess.Popen(command, shell=True)
+                p.wait()
+            except BaseException as e:
+                erros += 1
+                
+        QMessageBox.information(self.window, 'Sucesso', 'Todos os programas foram instalados\nErros: ' + str(erros))
 
 class App(object):
     def __init__(self):
