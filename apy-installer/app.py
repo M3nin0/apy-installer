@@ -15,7 +15,7 @@ class Install(object):
         self.window = window
         self.password , status = QInputDialog.getText(window, 'Senha', 'Insira sua senha')
         self.commands = {
-                'update': 'sudo -S apt-get update -f -y ',
+                'update': 'sudo -S apt-get update -y',
 
                 'Chrome': 'sudo -S apt-get install libxss1 libappindicator1 libindicator7 -f -y \
                 && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb\
