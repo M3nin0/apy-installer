@@ -29,7 +29,13 @@ class Install(object):
                 'Vim': 'apt-get install vim -f -y ',
 
                 'Telegram': '',
+
+                'Spotify': 'sudo -S apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410 && \
+                echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list && \
+                sudo apt-get update && sudo apt-get install spotify-client',
+
                 'VLC': 'apt-get install vlc -f -y',
+
                 'VirtualBox': 'sudo -S wget http://download.virtualbox.org/virtualbox/5.2.4/virtualbox-5.2_5.2.4-119785~Debian~jessie_amd64.deb -O virtualbox \
                 sudo dpkg -i virtualbox',
                 ''
@@ -57,7 +63,7 @@ class Install(object):
                     subprocess.Popen(command, shell=True)
                 except BaseException as e:
                     erros += 1
-                    QMessageBox.information(window, 'Erro', e)
+                    QMessageBox.information(window, 'Erro', 'Erro ao tentar instalar ' + checks.text() + '\n' + e)
                     continue
 
         QMessageBox.information(window, 'Sucesso', 'Os programas selecionados foram instalados\nErros: ' + erros)

@@ -1,4 +1,4 @@
-# APY Installer
+# APY Installer :wrench:
 Programa que facilita a instalação de ferramentas úteis em sistemas Linux (Debian-like).
 
 ## Programas disponíveis
@@ -8,7 +8,7 @@ Programa que facilita a instalação de ferramentas úteis em sistemas Linux (De
 - [X] Atom
 - [X] Vim
 - [ ] Telegram
-- [ ] Spotify
+- [X] Spotify
 - [ ] Eclipse
 - [X] VirtualBox
 - [ ] Dropbox
