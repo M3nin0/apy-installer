@@ -8,7 +8,7 @@ Programa que facilita a instalação de ferramentas úteis em sistemas Linux (De
 - [X] Atom
 - [X] Vim
 - [X] Spotify
-- [ ] JDK
+- [X] JDK
 - [X] VirtualBox
 - [X] Dropbox
 - [X] VLC
