@@ -33,3 +33,6 @@ sudo apt-get install python3-pyqt5
 Após instalar o PyQt5, basta executar o programa da seguinte forma: <code>cd apy-installer && python3 app.py</code>
 
 OBS: O comando python pode mudar de acordo com suas configurações
+
+## Exemplo
+![alt text](images/example.png "Exemplo 1")
