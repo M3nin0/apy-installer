@@ -39,7 +39,7 @@ class Install(object):
                 sudo dpkg -i virtualbox',
 
                 'Dropbox': 'sudo -S wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb -O dropbox && \
-                dpkg -i dropbox',
+                sudo dpkg -i dropbox',
 
                 'JDK': 'sudo -S apt-get install default-jre && sudo apt-get install default-jdk'
             }
