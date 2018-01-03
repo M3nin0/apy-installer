@@ -37,8 +37,7 @@ class Install(object):
                 'VLC': 'apt-get install vlc -f -y',
 
                 'VirtualBox': 'sudo -S wget http://download.virtualbox.org/virtualbox/5.2.4/virtualbox-5.2_5.2.4-119785~Debian~jessie_amd64.deb -O virtualbox \
-                sudo dpkg -i virtualbox',
-                ''
+                sudo dpkg -i virtualbox'
             }
         command = "echo " + "\""+ self.password +"\"" + " | " + self.commands['update']
 
