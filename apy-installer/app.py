@@ -15,13 +15,13 @@ class Install(object):
         self.window = window
         self.password , status = QInputDialog.getText(window, 'Senha', 'Insira sua senha')
         self.commands = {
-                'update': 'sudo -S apt-get update',
+                'update': 'sudo -S apt-get update -f -y ',
 
-                'Chrome': 'sudo -S apt-get install libxss1 libappindicator1 libindicator7 \
+                'Chrome': 'sudo -S apt-get install libxss1 libappindicator1 libindicator7 -f -y \
                 && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb\
                 && sudo dpkg -i google-chrome*.deb',
 
-                'Opera': 'sudo -S apt-get install apt-transport-https && \
+                'Opera': 'sudo -S apt-get install apt-transport-https -f -y && \
                 wget http://deb.opera.com/opera/pool/non-free/o/opera-stable/opera-stable_43.0.2442.806_amd64.deb -O "opera" && \
 	            sudo dpkg -i opera && sudo apt-get install -f -y',
 
@@ -33,7 +33,7 @@ class Install(object):
 
                 'Spotify': 'sudo -S apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410 && \
                 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list && \
-                sudo apt-get update && sudo apt-get install spotify-client',
+                sudo apt-get update && sudo apt-get install spotify-client -f -y',
 
                 'VLC': 'sudo -S apt-get install vlc -f -y',
 
