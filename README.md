@@ -7,11 +7,10 @@ Programa que facilita a instalação de ferramentas úteis em sistemas Linux (De
 - [X] Opera
 - [X] Atom
 - [X] Vim
-- [ ] Telegram
 - [X] Spotify
-- [ ] Eclipse
+- [ ] JDK
 - [X] VirtualBox
-- [ ] Dropbox
+- [X] Dropbox
 - [X] VLC
 
 ## Uso

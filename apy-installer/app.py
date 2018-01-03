@@ -29,8 +29,6 @@ class Install(object):
 
                 'Vim': 'sudo -S apt-get install vim -f -y ',
 
-                'Telegram': '',
-
                 'Spotify': 'sudo -S apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410 && \
                 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list && \
                 sudo apt-get update && sudo apt-get install spotify-client -f -y',
@@ -38,7 +36,12 @@ class Install(object):
                 'VLC': 'sudo -S apt-get install vlc -f -y',
 
                 'VirtualBox': 'sudo -S wget http://download.virtualbox.org/virtualbox/5.2.4/virtualbox-5.2_5.2.4-119785~Debian~jessie_amd64.deb -O virtualbox \
-                sudo dpkg -i virtualbox'
+                sudo dpkg -i virtualbox',
+
+                'Dropbox': 'sudo -S wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb -O dropbox && \
+                dpkg -i dropbox',
+
+                'JDK': 'sudo -S apt-get install default-jre && sudo apt-get install default-jdk'
             }
         command = "echo " + "\""+ self.password +"\"" + " | " + self.commands['update']
 

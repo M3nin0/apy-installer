@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>382</width>
-    <height>472</height>
+    <width>395</width>
+    <height>436</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -66,7 +66,7 @@
     <property name="geometry">
      <rect>
       <x>110</x>
-      <y>351</y>
+      <y>310</y>
       <width>181</width>
       <height>31</height>
      </rect>
@@ -84,7 +84,7 @@
     <property name="geometry">
      <rect>
       <x>83</x>
-      <y>390</y>
+      <y>349</y>
       <width>231</width>
       <height>31</height>
      </rect>
@@ -185,29 +185,11 @@
       <string>Vim</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="check_telegram">
+    <widget class="QCheckBox" name="check_spotify">
      <property name="geometry">
       <rect>
        <x>7</x>
        <y>70</y>
-       <width>101</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Telegram</string>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="check_spotify">
-     <property name="geometry">
-      <rect>
-       <x>151</x>
-       <y>120</y>
        <width>80</width>
        <height>20</height>
       </rect>
@@ -221,11 +203,11 @@
       <string>Spotify</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="check_eclipse">
+    <widget class="QCheckBox" name="check_jdk">
      <property name="geometry">
       <rect>
        <x>7</x>
-       <y>147</y>
+       <y>96</y>
        <width>101</width>
        <height>20</height>
       </rect>
@@ -236,7 +218,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Eclipse</string>
+      <string>JDK</string>
      </property>
     </widget>
     <widget class="QCheckBox" name="check_virtualbox">
@@ -275,24 +257,6 @@
       <string>Dropbox</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="check_whatsapp">
-     <property name="geometry">
-      <rect>
-       <x>7</x>
-       <y>95</y>
-       <width>111</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Whatsapp</string>
-     </property>
-    </widget>
     <widget class="QCheckBox" name="check_vlc">
      <property name="geometry">
       <rect>
@@ -315,34 +279,28 @@
     <zorder>check_opera</zorder>
     <zorder>check_atom</zorder>
     <zorder>check_vim</zorder>
-    <zorder>check_telegram</zorder>
     <zorder>check_spotify</zorder>
-    <zorder>check_eclipse</zorder>
+    <zorder>check_jdk</zorder>
     <zorder>check_virtualbox</zorder>
-    <zorder>check_dropbox</zorder>
-    <zorder>check_whatsapp</zorder>
-    <zorder>check_vlc</zorder>
-    <zorder>check_chrome</zorder>
-    <zorder>check_opera</zorder>
-    <zorder>check_atom</zorder>
-    <zorder>check_vim</zorder>
-    <zorder>check_telegram</zorder>
-    <zorder>check_eclipse</zorder>
-    <zorder>check_spotify</zorder>
-    <zorder>check_virtualbox</zorder>
-    <zorder>check_whatsapp</zorder>
     <zorder>check_dropbox</zorder>
     <zorder>check_vlc</zorder>
     <zorder>check_chrome</zorder>
     <zorder>check_opera</zorder>
     <zorder>check_atom</zorder>
     <zorder>check_vim</zorder>
-    <zorder>check_telegram</zorder>
+    <zorder>check_jdk</zorder>
     <zorder>check_spotify</zorder>
-    <zorder>check_eclipse</zorder>
     <zorder>check_virtualbox</zorder>
     <zorder>check_dropbox</zorder>
-    <zorder>check_whatsapp</zorder>
+    <zorder>check_vlc</zorder>
+    <zorder>check_chrome</zorder>
+    <zorder>check_opera</zorder>
+    <zorder>check_atom</zorder>
+    <zorder>check_vim</zorder>
+    <zorder>check_spotify</zorder>
+    <zorder>check_jdk</zorder>
+    <zorder>check_virtualbox</zorder>
+    <zorder>check_dropbox</zorder>
     <zorder>check_vlc</zorder>
    </widget>
   </widget>
@@ -351,7 +309,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>382</width>
+     <width>395</width>
      <height>19</height>
     </rect>
    </property>
