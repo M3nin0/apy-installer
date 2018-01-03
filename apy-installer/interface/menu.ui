@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>382</width>
+    <height>472</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>99999</width>
+    <height>99999</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>APY Installer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>181</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>APY Installer</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>100</y>
+      <width>291</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Selecione os aplicativos a serem instalados</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_install">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>351</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Instalar selecionados</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_install_all">
+    <property name="geometry">
+     <rect>
+      <x>83</x>
+      <y>390</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Instalar todos os pacotes</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="select_box">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>140</y>
+      <width>251</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <widget class="QCheckBox" name="check_chrome">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>20</y>
+       <width>86</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Chrome</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="check_opera">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>45</y>
+       <width>72</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Opera</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="check_atom">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>45</y>
+       <width>120</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Atom</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="check_vim">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>95</y>
+       <width>88</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Vim</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="check_telegram">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>70</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Telegram</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="check_spotify">
+     <property name="geometry">
+      <rect>
+       <x>151</x>
+       <y>120</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Spotify</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="check_eclipse">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>147</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Eclipse</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="check_virtualbox">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>70</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>VirtualBox</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="check_dropbox">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Dropbox</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="check_whatsapp">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>95</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Whatsapp</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="check_vlc">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>120</y>
+       <width>112</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>VLC</string>
+     </property>
+    </widget>
+    <zorder>check_chrome</zorder>
+    <zorder>check_opera</zorder>
+    <zorder>check_atom</zorder>
+    <zorder>check_vim</zorder>
+    <zorder>check_telegram</zorder>
+    <zorder>check_spotify</zorder>
+    <zorder>check_eclipse</zorder>
+    <zorder>check_virtualbox</zorder>
+    <zorder>check_dropbox</zorder>
+    <zorder>check_whatsapp</zorder>
+    <zorder>check_vlc</zorder>
+    <zorder>check_chrome</zorder>
+    <zorder>check_opera</zorder>
+    <zorder>check_atom</zorder>
+    <zorder>check_vim</zorder>
+    <zorder>check_telegram</zorder>
+    <zorder>check_eclipse</zorder>
+    <zorder>check_spotify</zorder>
+    <zorder>check_virtualbox</zorder>
+    <zorder>check_whatsapp</zorder>
+    <zorder>check_dropbox</zorder>
+    <zorder>check_vlc</zorder>
+    <zorder>check_chrome</zorder>
+    <zorder>check_opera</zorder>
+    <zorder>check_atom</zorder>
+    <zorder>check_vim</zorder>
+    <zorder>check_telegram</zorder>
+    <zorder>check_spotify</zorder>
+    <zorder>check_eclipse</zorder>
+    <zorder>check_virtualbox</zorder>
+    <zorder>check_dropbox</zorder>
+    <zorder>check_whatsapp</zorder>
+    <zorder>check_vlc</zorder>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>382</width>
+     <height>19</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
